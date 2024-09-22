@@ -1,0 +1,99 @@
+/* Basic styling for the to-do container */
+.todo-container {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Styling the input and button for adding and editing todos */
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style for each to-do item */
+  .todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for to-do text */
+  .todo-text {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  /* Style for the buttons within the to-do item */
+  .todo-item button {
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 14px;
+    background-color: #ff4757;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .todo-item button.edit-btn {
+    background-color: #1e90ff;
+  }
+  
+  .todo-item button:hover {
+    background-color: #d63031;
+  }
+  
+  .todo-item button.edit-btn:hover {
+    background-color: #007bff;
+  }
+  
+  /* Style for the radio button (toggle complete) */
+  input[type="radio"] {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  /* Strikethrough effect for completed todos */
+  .completed {
+    text-decoration: line-through;
+    color: #777;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 400px) {
+    .todo-container {
+      width: 90%;
+    }
+  
+    button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  
